@@ -12,6 +12,7 @@ $secondary: #e9416d;
 $pink: #fdecf0;
 $light: #f8f8f8;
 $dark: #1d1d1d;
+$text-muted: #808080;
 
 $theme-colors: (
   'pink': $pink,
@@ -45,3 +46,17 @@ $container-max-widths: (
 );
 
 $border-color: #f0f0f0;
+
+$input-btn-font-size: 0.875rem;
+$input-btn-padding-y: 0.5rem;
+$btn-border-radius: 20px;
+$input-border-radius: 20px;
+
+$breadcrumb-font-size: 12px;
+$breadcrumb-padding-y: 1rem;
+$breadcrumb-padding-x: 0;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: rgba($text-muted, 0.3);
+$breadcrumb-active-color: $text-muted;
+$breadcrumb-divider: quote('|');

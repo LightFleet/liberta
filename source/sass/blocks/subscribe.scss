@@ -1,0 +1,17 @@
+.subscribe {
+  padding: 20px 0;
+  background-color: $primary;
+  color: #fff;
+  font-weight: 500;
+
+  &__form-control {
+    border-color: transparent;
+    min-width: 300px;
+  }
+
+  &__btn {
+    min-width: 150px;
+    background-color: $dark;
+    border-color: $dark;
+  }
+}
