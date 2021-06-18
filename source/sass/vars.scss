@@ -1,5 +1,47 @@
 $font-family-sans-serif: 'Roboto', 'Helvetica', sans-serif;
-$headings-font-family: 'KievitPro', 'Helvetica', sans-serif;
 $font-weight-base: 300;
+$body-color: #000;
+
+$headings-font-family: 'KievitPro', 'Helvetica', sans-serif;
 $headings-font-weight: 800;
+$headings-margin-bottom: 1rem;
 $h1-font-size: 3rem;
+
+$primary: #2c8a7b;
+$secondary: #e9416d;
+$pink: #fdecf0;
+$light: #f8f8f8;
+$dark: #1d1d1d;
+
+$theme-colors: (
+  'pink': $pink,
+);
+
+$spacer: 1rem;
+$spacers: (
+  20p: 20px,
+  30p: 30px,
+  40p: 40px,
+  60p: 60px,
+);
+
+$font-sizes: (
+  14: 14px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 740px,
+  lg: 960px,
+  xl: 1280px,
+);
+
+$border-color: #f0f0f0;
