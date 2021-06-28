@@ -28,6 +28,7 @@ $spacers: (
 
 $font-sizes: (
   14: 14px,
+  16: 16px,
 );
 
 $grid-breakpoints: (
@@ -67,3 +68,10 @@ $breadcrumb-bg: transparent;
 $breadcrumb-divider-color: rgba($text-muted, 0.3);
 $breadcrumb-active-color: $text-muted;
 $breadcrumb-divider: quote('|');
+
+$dropdown-border-width: 0;
+$dropdown-link-color: inherit;
+$dropdown-link-hover-color: $secondary;
+$dropdown-link-hover-bg: transparent;
+$dropdown-link-active-bg: transparent;
+$dropdown-link-active-color: $secondary;

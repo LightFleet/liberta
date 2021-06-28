@@ -1,0 +1,26 @@
+.header {
+  &__top {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    a:not([class]),
+    .dropdown-toggle {
+      color: inherit;
+      transition: 0.3s;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+
+    .dropdown-toggle {
+      font-weight: inherit;
+    }
+
+    .dropdown-menu {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

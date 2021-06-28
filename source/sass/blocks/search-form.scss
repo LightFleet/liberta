@@ -1,0 +1,29 @@
+.search-form {
+  display: flex;
+  width: 24px;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &.show {
+    width: auto;
+  }
+
+  &__toggle {
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  &__field {
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    padding: 0;
+    margin-left: 12px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
