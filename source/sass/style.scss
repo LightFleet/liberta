@@ -3,7 +3,8 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'helpers/fs';
 @import 'helpers/helpers';
-@import 'global';
+@import 'helpers/row';
+@import 'blocks/advantages-item';
 @import 'blocks/breadcrumb';
 @import 'blocks/cart-link';
 @import 'blocks/delivery';
