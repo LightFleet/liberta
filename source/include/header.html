@@ -1,102 +1,89 @@
-<div class="container-fluid py-2 bg-primary text-white fs-14 border-secondary border-left border-4">
-  <div class="row align-items-center flex-sm-nowrap">
-    <div class="col-sm">
-      <p class="mb-0">Срок производства индивидуальных зеркал и душевых кабин от 1-го до 7-ми рабочих дней. Убедитесь в совершенстве LIBERTA!</span></p>
+<div class="container header__top">
+  <div class="row align-items-center">
+    <div class="col-5">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <div class="dropdown">
+            <button class="btn-unstyled dropdown-toggle" type="button" id="showrooms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg class="align-baseline" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              Адреса шоурумов
+            </button>
+            <div class="dropdown-menu fs-14" aria-labelledby="showrooms">
+              <a class="dropdown-item" href="/dnepr">Днепр</a>
+              <a class="dropdown-item" href="/kyiv">Киев</a>
+              <a class="dropdown-item" href="/kharkov">Харьков</a>
+              <a class="dropdown-item" href="/odessa">Одесса</a>
+              <a class="dropdown-item" href="/lviv">Львов</a>
+              <a class="dropdown-item" href="/showrooms">УКРАИНА</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <a href="/service-center">Сервисный центр</a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-auto mt-2 mt-sm-0">
-      <button class="btn btn-sm btn-outline-light">Спасибо, уже знаю</button>
+    <div class="col-2 text-center">
+      <a href="/">
+        <img src="//liberta.ua/img/svg/logo.svg" alt="Liberta logo">
+      </a>
+    </div>
+    <div class="col-5">
+      <div class="row align-items-center justify-content-end">
+        <div class="col-auto">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="tel:+380673265980" role="button" id="phones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              +38(067) 326-59-80
+            </a>
+            <div class="dropdown-menu fs-14" aria-labelledby="phones">
+              <a class="dropdown-item" href="tel:+380501005980">+38(050) 100-59-80</a>
+              <a class="dropdown-item" href="tel:+380931701347">+38(093) 170-13-47</a>
+              <span class="d-block text-center fs-16">Отдел нестандартов:</span>
+              <a class="dropdown-item" href="tel:+380500155090">+38(050) 015 50 90</a>
+              <a class="dropdown-item" href="tel:+380970155090">+38(097) 015 50 90</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <form action="/search" le="search" class="search-form">
+            <button type="button" class="search-form__toggle btn-unstyled">
+              <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <input type="search" name="q" class="search-form__field" placeholder="Поиск по сайту" autocomplete="off" value="">
+          </form>
+        </div>
+        <div class="col-auto">
+          <!-- чтобы сделать ссылку неактивной - убираем href -->
+          <a class="cart-link" href="/cart">
+            <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            <span id="cart-count" class="cart-link__count">1</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<header class="header">
-  <div class="container header__top">
-    <div class="row align-items-center">
-      <div class="col-5">
-        <div class="row align-items-center">
-          <div class="col-auto">
-            <div class="dropdown">
-              <button class="btn-unstyled dropdown-toggle" type="button" id="showrooms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <svg class="align-baseline" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#map-mark"></use>
-                </svg>
-                Адреса шоурумов
-              </button>
-              <div class="dropdown-menu fs-14" aria-labelledby="showrooms">
-                <a class="dropdown-item" href="/dnepr">Днепр</a>
-                <a class="dropdown-item" href="/kyiv">Киев</a>
-                <a class="dropdown-item" href="/kharkov">Харьков</a>
-                <a class="dropdown-item" href="/odessa">Одесса</a>
-                <a class="dropdown-item" href="/lviv">Львов</a>
-                <a class="dropdown-item" href="/showrooms">УКРАИНА</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <a href="/service-center">Сервисный центр</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-2 text-center">
-        <a href="/">
-          <img src="//liberta.ua/img/svg/logo.svg" alt="Liberta logo">
-        </a>
-      </div>
-      <div class="col-5">
-        <div class="row align-items-center justify-content-end">
-          <div class="col-auto">
-            <div class="dropdown">
-              <a class="dropdown-toggle" href="tel:+380673265980" role="button" id="phones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                +38(067) 326-59-80
-              </a>
-              <div class="dropdown-menu fs-14" aria-labelledby="phones">
-                <a class="dropdown-item" href="tel:+380501005980">+38(050) 100-59-80</a>
-                <a class="dropdown-item" href="tel:+380931701347">+38(093) 170-13-47</a>
-                <span class="d-block text-center fs-16">Отдел нестандартов:</span>
-                <a class="dropdown-item" href="tel:+380500155090">+38(050) 015 50 90</a>
-                <a class="dropdown-item" href="tel:+380970155090">+38(097) 015 50 90</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-auto">
-            <form action="/search" le="search" class="search-form">
-              <button type="button" class="search-form__toggle btn-unstyled">
-                <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-              </button>
-              <input type="search" name="q" class="search-form__field" placeholder="Поиск по сайту" autocomplete="off" value="">
-            </form>
-          </div>
-          <div class="col-auto">
-            <!-- чтобы сделать ссылку неактивной - убираем href -->
-            <a class="cart-link" href="/cart">
-              <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#cart"></use>
-              </svg>
-              <span id="cart-count" class="cart-link__count">1</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+<nav class="main-nav">
+  <div class="container">
+    <ul class="main-nav__list list-unstyled mb-0">
+      <li>
+        <a href="/mirrors">Зеркала</a>
+      </li>
+      <li>
+        <a href="/showers">Душевые кабины</a>
+      </li>
+      <li>
+        <a href="/doors">Межкомнатные двери</a>
+      </li>
+      <li>
+        <a href="/sliding">Раздвижные системы</a>
+      </li>
+    </ul>
   </div>
-  <nav class="main-nav">
-    <div class="container">
-      <ul class="main-nav__list list-unstyled mb-0">
-        <li>
-          <a href="/mirrors">Зеркала</a>
-        </li>
-        <li>
-          <a href="/showers">Душевые кабины</a>
-        </li>
-        <li>
-          <a href="/doors">Межкомнатные двери</a>
-        </li>
-        <li>
-          <a href="/sliding">Раздвижные системы</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+</nav>

@@ -5,7 +5,8 @@
     padding-bottom: 15px;
 
     a:not([class]),
-    .dropdown-toggle {
+    .dropdown-toggle,
+    .btn-unstyled {
       color: inherit;
       transition: 0.3s;
 
@@ -21,6 +22,22 @@
 
     .dropdown-menu {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--main {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+
+    .header__top {
+      color: #fff;
+    }
+
+    .main-nav {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.1);
     }
   }
 }

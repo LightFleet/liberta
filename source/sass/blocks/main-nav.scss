@@ -1,6 +1,7 @@
 .main-nav {
   background-color: $dark;
   color: #fff;
+  border-top: 2px solid transparent;
 
   &__list {
     display: flex;
