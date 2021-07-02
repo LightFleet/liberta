@@ -2,6 +2,7 @@
 @import 'fonts';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'jquery.fancybox.scss';
+@import 'slick.scss';
 @import 'helpers/fs';
 @import 'helpers/helpers';
 @import 'helpers/row';
@@ -13,5 +14,6 @@
 @import 'blocks/header';
 @import 'blocks/main-carousel';
 @import 'blocks/main-nav';
+@import 'blocks/posts-slider';
 @import 'blocks/search-form';
 @import 'blocks/subscribe';
