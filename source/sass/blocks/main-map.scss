@@ -1,14 +1,16 @@
-.manufacture {
+.main-map {
   text-align: center;
-  color: #fff;
   min-height: 415px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    var(--bg);
+  background-image: url('//liberta.ua/img/main-map.jpg');
+
+  .btn-secondary {
+    width: 195px;
+    max-width: 100%;
+  }
 }
