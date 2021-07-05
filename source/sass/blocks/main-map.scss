@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  background-image: url('//liberta.ua/img/main-map.jpg');
 
   .btn-secondary {
     width: 195px;
     max-width: 100%;
+  }
+
+  .section-parallax__bg {
+    background-image: url('//liberta.ua/img/main-map.jpg');
   }
 }

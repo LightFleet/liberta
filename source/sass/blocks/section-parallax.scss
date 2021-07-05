@@ -1,0 +1,15 @@
+.section-parallax {
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 637px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
