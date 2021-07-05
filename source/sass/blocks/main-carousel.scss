@@ -193,9 +193,13 @@
         }
 
         &-icon {
-          width: 39px;
+          width: 38px;
           height: 38px;
-          background: url(//liberta.ua/img/svg/other.svg);
+          border: 1px solid #fff;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          background-size: 18px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 407.436 407.436' fill='%23fff'%3E%3Cpath d='M112.814 0L91.566 21.178 273.512 203.718 91.566 386.258 112.814 407.436 315.869 203.718z'/%3E%3C/svg%3E");
         }
       }
 
@@ -204,16 +208,12 @@
         top: unset;
 
         &-icon {
-          background-position: 289px 390px;
+          transform: scaleX(-1);
         }
       }
 
       &-next {
         top: 44%;
-
-        &-icon {
-          background-position: 245px 390px;
-        }
       }
     }
   }

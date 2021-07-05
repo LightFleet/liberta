@@ -10,10 +10,15 @@
   &__item {
     padding: 0 15px;
 
+    &-icon {
+      color: $primary;
+    }
+
     &-title {
       font-family: $font-family-sans-serif;
       font-size: 16px;
       font-weight: 500;
+      line-height: 1.5;
       margin-bottom: 0;
     }
   }
