@@ -104,11 +104,17 @@
     }
   }
 
+  &__text {
+    max-width: 515px;
+    margin-left: 70px;
+  }
+
   .carousel {
     &-inner {
       position: relative;
-      height: 720px;
       overflow: hidden;
+      height: 50vw;
+      max-height: 720px;
       z-index: 1;
     }
 
@@ -147,34 +153,30 @@
     }
 
     &-caption {
-      width: 515px;
-      left: -30%;
-      right: 0;
-      margin: 0 auto;
       text-align: left;
+      left: 0;
+      right: 0;
       bottom: 25%;
+      font-size: 22px;
+      text-shadow: 1px 1px 4px $dark;
 
-      span {
+      a {
         font-family: 'KievitPro';
         font-size: 90px;
         font-weight: 800;
-        line-height: 100px;
+        line-height: 1.1;
+        color: inherit;
+        border-bottom: 0.1em solid transparent;
+        transition: 0.3s;
 
-        a {
-          color: inherit;
-          border-bottom: 0.1em solid transparent;
-          transition: 0.3s;
-
-          &:hover {
-            border-color: currentColor;
-            text-decoration: none;
-          }
+        &:hover {
+          border-color: currentColor;
+          text-decoration: none;
         }
       }
 
       p {
-        font-size: 22px;
-        margin-top: 30px;
+        margin: 30px 0 0;
       }
     }
 
@@ -204,8 +206,7 @@
       }
 
       &-prev {
-        bottom: 43%;
-        top: unset;
+        top: calc(50% + 10px);
 
         &-icon {
           transform: scaleX(-1);
@@ -213,7 +214,8 @@
       }
 
       &-next {
-        top: 44%;
+        bottom: calc(50% + 10px);
+        top: auto;
       }
     }
   }
@@ -240,18 +242,70 @@
 
 @include media-breakpoint-down(lg) {
   .main-carousel {
+    .carousel {
+      &-caption {
+        a {
+          font-size: 60px;
+        }
+      }
+    }
+
     .wrap-carousel-icon {
       left: calc((100% - 930px) / 2);
       right: calc((100% - 930px) / 2);
+
+      &::before {
+        display: none;
+      }
     }
   }
 }
 
 @include media-breakpoint-down(md) {
   .main-carousel {
+    &__social {
+      top: 100px;
+    }
+
+    .carousel {
+      &-caption {
+        font-size: 18px;
+
+        a {
+          font-size: 48px;
+        }
+      }
+    }
+
     .wrap-carousel-icon {
       left: calc((100% - 710px) / 2);
       right: calc((100% - 710px) / 2);
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .main-carousel {
+    &__text {
+      margin-left: 0;
+    }
+
+    .carousel {
+      &-inner {
+        height: 330px;
+      }
+
+      &-caption {
+        bottom: 20%;
+
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .wrap-carousel-icon {
+      display: none;
     }
   }
 }
