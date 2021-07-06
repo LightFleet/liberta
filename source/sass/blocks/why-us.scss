@@ -23,3 +23,20 @@
     }
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .why-us {
+    &__list {
+      li {
+        &:not(:last-child) {
+          border-bottom: 2px solid $light;
+          border-right: 0;
+        }
+      }
+    }
+
+    &__item {
+      padding: 10px 0;
+    }
+  }
+}
