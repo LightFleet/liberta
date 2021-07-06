@@ -1,5 +1,5 @@
 .advantages-item {
-  padding: 26px 38px;
+  padding: 30px 30px 40px;
   height: 100%;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -8,5 +8,23 @@
 
   &__descr {
     text-shadow: 1px 1px 4px #fff;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .advantages-item {
+    .h2 {
+      font-size: 26px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .advantages-item {
+    padding: 30px 20px;
   }
 }
