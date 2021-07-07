@@ -309,3 +309,19 @@
     }
   }
 }
+
+@include media-breakpoint-down(xs) {
+  .main-carousel {
+    &__text {
+      padding-right: 48px;
+    }
+
+    .carousel {
+      &-caption {
+        a {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}

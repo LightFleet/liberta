@@ -13,10 +13,6 @@
 
 @include media-breakpoint-down(lg) {
   .advantages-item {
-    .h2 {
-      font-size: 26px;
-    }
-
     &__descr {
       font-size: 14px;
     }
