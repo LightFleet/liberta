@@ -60,11 +60,14 @@
     }
   }
 
+  &__top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2b2a29;
+    margin-bottom: 30px;
+  }
+
   &__bottom {
     font-size: 14px;
-    border-top: 1px solid #2b2a29;
-    margin-top: 30px;
-    padding-top: 30px;
 
     a {
       color: #fff;
