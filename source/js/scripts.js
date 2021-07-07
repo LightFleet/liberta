@@ -4,6 +4,14 @@ $(function () {
     $('.search-form').toggleClass('show');
   });
 
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() >= 64) {
+      $('.header').addClass('in-top');
+    } else {
+      $('.header').removeClass('in-top');
+    }
+  });
+
   if ($(window).width() >= 1280) {
     var $paraElm = $('.section-parallax');
     parallaxThis($paraElm);

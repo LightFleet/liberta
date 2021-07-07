@@ -41,4 +41,55 @@
       background-color: transparent;
     }
   }
+
+  &.in-top {
+    z-index: 999;
+
+    .main-nav {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $dark;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .header {
+    &.in-top,
+    &:not(&--main) {
+      .header__top {
+        border-color: $dark;
+      }
+    }
+
+    &.in-top {
+      .header__top {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fff;
+      }
+    }
+
+    &--main.in-top {
+      .header__top {
+        color: $dark;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .header {
+    &__logo {
+      margin: 0 -15px;
+    }
+  }
 }

@@ -35,10 +35,10 @@
     background-color: rgba(0, 0, 0, 0.7);
     font-weight: 500;
     position: relative;
+    z-index: 16;
 
     &-wrap {
       position: absolute;
-      z-index: 16;
       bottom: 0;
       width: 100%;
     }
