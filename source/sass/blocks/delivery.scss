@@ -1,8 +1,10 @@
-.delivery {
-  background-image: linear-gradient(
-    to right,
-    transparent 50%,
-    $light 50%,
-    $light 100%
-  );
+@include media-breakpoint-up(xl) {
+  .delivery {
+    background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      $light 50%,
+      $light 100%
+    );
+  }
 }
