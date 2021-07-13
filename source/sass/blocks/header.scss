@@ -1,4 +1,7 @@
 .header {
+  position: relative;
+  z-index: 2;
+
   &__top {
     &-wrapper {
       min-height: 46px;
@@ -9,7 +12,7 @@
     top: -46px;
     transition: top 0.3s;
 
-    a:not([class]),
+    a,
     .dropdown-toggle,
     .btn-unstyled {
       color: inherit;
@@ -38,9 +41,14 @@
     min-height: 40px;
   }
 
+  &__languages {
+    .dropdown-menu {
+      min-width: auto;
+    }
+  }
+
   &--main {
     position: absolute;
-    z-index: 2;
     left: 0;
     right: 0;
 
@@ -68,7 +76,7 @@
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .header {
     &__logo {
       width: 138px;

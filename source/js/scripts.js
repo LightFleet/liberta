@@ -2,14 +2,14 @@ $(function () {
 
   $('.search-form__toggle').on('click', function () {
 
-    $('.header__phone').toggleClass('d-lg-block');
+    $('.header__phone').toggleClass('d-xl-block');
     $('.search-form__field').toggleClass('show');
     $('.search-form__field.show').focus();
 
     $('.search-form__field').on('focusout', function () {
       $('.search-form__field').removeClass('show');
       setTimeout(function () {
-        $('.header__phone').addClass('d-lg-block');
+        $('.header__phone').addClass('d-xl-block');
       }, 400);
       if ($(window).width() < 576) {
         setTimeout(function () {
