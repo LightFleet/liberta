@@ -1,6 +1,8 @@
 .main-nav {
   background-color: $dark;
   color: #fff;
+  top: -40px;
+  transition: top 0.3s;
 
   &__list {
     display: flex;

@@ -6,7 +6,8 @@
     position: absolute;
     z-index: 2;
     right: 15px;
-    top: 15%;
+    top: 50%;
+    transform: translateY(-50%);
 
     li {
       &:not(:last-child) {
@@ -263,10 +264,6 @@
 
 @include media-breakpoint-down(md) {
   .main-carousel {
-    &__social {
-      top: 100px;
-    }
-
     .carousel {
       &-caption {
         font-size: 18px;

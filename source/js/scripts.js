@@ -1,15 +1,40 @@
 $(function () {
 
   $('.search-form__toggle').on('click', function () {
-    $('.search-form').toggleClass('show');
+
+    $('.header__phone').toggleClass('d-lg-block');
+    $('.search-form__field').toggleClass('show');
+    $('.search-form__field.show').focus();
+
+    $('.search-form__field').on('focusout', function () {
+      $('.search-form__field').removeClass('show');
+      setTimeout(function () {
+        $('.header__phone').addClass('d-lg-block');
+      }, 400);
+      if ($(window).width() < 576) {
+        setTimeout(function () {
+          $('.header__logo--m').removeClass('d-none');
+        }, 400);
+      }
+    });
+
+    if ($(window).width() < 576) {
+      $('.header__logo--m').toggleClass('d-none');
+    }
+
   });
 
   $(window).on('scroll', function () {
-    if ($(this).scrollTop() >= 64) {
+    if ($(this).scrollTop() >= 150) {
       $('.header').addClass('in-top');
     } else {
       $('.header').removeClass('in-top');
     }
+  });
+
+  $('.main-carousel__video-close, .main-carousel__video-cancel').on('click', function (e) {
+    e.preventDefault();
+    $('.main-carousel__video-wrap').attr('style', 'display: none !important');
   });
 
   if ($(window).width() >= 1280) {
