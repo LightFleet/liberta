@@ -16,7 +16,7 @@
         font-weight: 500;
         letter-spacing: 2px;
         padding: 8px 24px;
-        transition: 0.3s;
+        transition:$transition-base;
 
         &:hover {
           color: $text-muted;

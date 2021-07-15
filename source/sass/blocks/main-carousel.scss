@@ -23,7 +23,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: 0.3s;
+      transition: $transition-base;
 
       &:hover {
         opacity: 0.7;
@@ -46,7 +46,7 @@
 
     .btn-unstyled {
       color: $text-muted;
-      transition: 0.3s;
+      transition: $transition-base;
 
       &:hover {
         color: #fff;
@@ -168,7 +168,7 @@
         line-height: 1.1;
         color: inherit;
         border-bottom: 0.1em solid transparent;
-        transition: 0.3s;
+        transition: $transition-base;
 
         &:hover {
           border-color: currentColor;
@@ -189,7 +189,7 @@
         left: 0;
         width: 39px;
         height: 38px;
-        transition: 0.3s;
+        transition: $transition-base;
 
         &:hover {
           opacity: 0.7;

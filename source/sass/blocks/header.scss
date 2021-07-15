@@ -16,7 +16,7 @@
     .dropdown-toggle,
     .btn-unstyled {
       color: inherit;
-      transition: 0.3s;
+      transition: $transition-base;
 
       &:hover {
         color: $secondary;

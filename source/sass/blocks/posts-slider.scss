@@ -18,7 +18,7 @@
       line-height: 1.2;
       color: inherit;
       cursor: pointer;
-      transition: 0.3s;
+      transition: $transition-base;
 
       &:hover {
         color: $secondary;

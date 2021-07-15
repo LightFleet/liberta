@@ -2,7 +2,7 @@
   &-toggle {
     &::after {
       vertical-align: middle;
-      transition: 0.3s;
+      transition: $transition-base;
     }
   }
 
