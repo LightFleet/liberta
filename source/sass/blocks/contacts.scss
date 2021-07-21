@@ -1,0 +1,33 @@
+.contacts {
+  &__social {
+    display: flex;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &--fb {
+        background-color: #3b5998;
+      }
+
+      &--youtube {
+        background-color: #ff4343;
+      }
+    }
+  }
+}
