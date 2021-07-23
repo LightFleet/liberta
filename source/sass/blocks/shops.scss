@@ -32,6 +32,20 @@
   .shops {
     &__list {
       column-count: 2;
+
+      li {
+        &:nth-child(n + 7) {
+          display: none;
+        }
+      }
+
+      &.expanded {
+        li {
+          &:nth-child(n + 7) {
+            display: block;
+          }
+        }
+      }
     }
   }
 }

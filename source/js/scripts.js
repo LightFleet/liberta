@@ -76,4 +76,14 @@ $(function () {
     ]
   });
 
+  $('.contacts__form .btn-toggle').on('click', function () {
+    $('.contacts__form').toggleClass('expanded');
+    $(this).toggleClass('active');
+  });
+
+  $('.shops .btn-toggle').on('click', function () {
+    $('.shops__list').toggleClass('expanded');
+    $(this).toggleClass('active');
+  });
+
 });
