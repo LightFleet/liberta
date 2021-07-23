@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сервисный центр – производство зеркал и стеклянных изделий Liberta</title>
+  <meta name="description" content="Сервисный центр украинского производителя, фабрика стекла Liberta.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/KievitPro-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <include src="source/include/popup-info-up.html"></include>
+
+  <header class="header">
+    <include src="source/include/header.html"></include>
+  </header>
+
+  <main class="service">
+    <section class="service__intro pt-20p pt-xl-0">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="d-none d-xl-block">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Сервисный центр – производство зеркал и стеклянных изделий Liberta</li>
+          </ol>
+        </nav>
+        <h1>Сервисный центр Liberta</h1>
+        <ul class="row list-unstyled mt-60p mb-0">
+          <li class="col-3 d-flex align-items-center">
+            <img class="img-fluid mr-2" src="//liberta.ua/img/phone-icon.png" alt="">
+            <div>
+              <span class="d-block fs-14">Телефон:</span>
+              <a class="text-dark fs-18 font-weight-500 text-decoration-none" href="tel:+380965051030">+38(096)505-10-30</a>
+            </div>
+          </li>
+          <li class="col-3 d-flex align-items-center">
+            <img class="img-fluid mr-2" src="//liberta.ua/img/mail-icon.png" alt="">
+            <div>
+              <span class="d-block fs-14">Эл. почта:</span>
+              <a class="fs-18 font-weight-500 text-decoration-none" href="mailto:help@liberta.com.ua">help@liberta.com.ua</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="container pt-20p">
+      <div class="row">
+        <div class="col-8">
+          <form>
+            <fieldset class="service__step service__step--first">
+              <legend class="h2">Ваши контактные данные</legend>
+              <div class="form-group row">
+                <label for="order-number" class="col-md-3 col-form-label fs-14">Номер заказа <span class="text-muted">*</span></label>
+                <div class="col-md-6">
+                  <input type="text" id="order-number" class="form-control" required>
+                  <div class="fs-12 text-muted">Номер - указан в техпаспорте изделия</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="col-form-label invalid-feedback mt-0">Неверный номер заказа</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-md-3 col-form-label fs-14">Имя и фамилия <span class="text-muted">*</span></label>
+                <div class="col-md-6">
+                  <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="col-md-3">
+                  <div class="col-form-label invalid-feedback mt-0">Введите имя и фамилию</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="phone" class="col-md-3 col-form-label fs-14">Телефон <span class="text-muted">*</span></label>
+                <div class="col-md-6">
+                  <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required>
+                </div>
+                <div class="col-md-3">
+                  <div class="col-form-label invalid-feedback mt-0">Введите Ваш телефон</div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label fs-14">Город</label>
+                <div class="col-md-6">
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <button class="btn btn-primary" type="submit">Далее</button>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="service__step service__step--second">
+              <legend class="h2">Особенности изделия</legend>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <include src="source/include/footer.html"></include>
+
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
