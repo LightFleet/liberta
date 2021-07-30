@@ -12,6 +12,7 @@ $h5-font-size: 1.125rem;
 $primary: #2c8a7b;
 $red: #e9416d;
 $secondary: $red;
+$info: #c3a573;
 $pink: #fdecf0;
 $light: #f8f8f8;
 $dark: #1d1d1d;
@@ -20,6 +21,8 @@ $text-muted: #808080;
 $theme-colors: (
   'pink': $pink,
 );
+
+$yiq-contrasted-threshold: 170;
 
 $spacer: 1rem;
 $spacers: (
