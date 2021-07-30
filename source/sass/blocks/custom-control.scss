@@ -1,0 +1,13 @@
+.custom-control {
+  &-label {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 2px;
+
+    &::before {
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+}

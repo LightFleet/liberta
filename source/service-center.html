@@ -54,54 +54,131 @@
       <div class="row">
         <div class="col-8">
           <form>
-            <fieldset class="service__step service__step--first">
-              <legend class="h2">Ваши контактные данные</legend>
-              <div class="form-group row">
-                <label for="order-number" class="col-md-3 col-form-label fs-14">Номер заказа <span class="text-muted">*</span></label>
-                <div class="col-md-6">
-                  <input type="text" id="order-number" class="form-control" required>
-                  <div class="fs-12 text-muted">Номер - указан в техпаспорте изделия</div>
+            <fieldset class="service__step service__step--first active">
+              <legend class="service__step-title h2">Ваши контактные данные</legend>
+              <div class="service__step-content">
+                <div class="form-group row">
+                  <label for="order-number" class="col-md-3 col-form-label fs-14">Номер заказа <span class="text-muted">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" id="order-number" class="form-control" required>
+                    <div class="fs-12 text-muted">Номер - указан в техпаспорте изделия</div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-form-label invalid-feedback mt-0">Неверный номер заказа</div>
+                  </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="col-form-label invalid-feedback mt-0">Неверный номер заказа</div>
+                <div class="form-group row">
+                  <label for="name" class="col-md-3 col-form-label fs-14">Имя и фамилия <span class="text-muted">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" id="name" class="form-control" required>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-form-label invalid-feedback mt-0">Введите имя и фамилию</div>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="name" class="col-md-3 col-form-label fs-14">Имя и фамилия <span class="text-muted">*</span></label>
-                <div class="col-md-6">
-                  <input type="text" id="name" class="form-control" required>
+                <div class="form-group row">
+                  <label for="phone" class="col-md-3 col-form-label fs-14">Телефон <span class="text-muted">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-form-label invalid-feedback mt-0">Введите Ваш телефон</div>
+                  </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="col-form-label invalid-feedback mt-0">Введите имя и фамилию</div>
+                <div class="form-group row">
+                  <label class="col-md-3 col-form-label fs-14">Город</label>
+                  <div class="col-md-6">
+                    <select class="select-two" style="width: 100%" data-placeholder="Введите город">
+                      <option></option>
+                      <option>м. Луцьк (Волинська обл.)</option>
+                      <option>м. Лубни (Полтавська обл.)</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="phone" class="col-md-3 col-form-label fs-14">Телефон <span class="text-muted">*</span></label>
-                <div class="col-md-6">
-                  <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required>
-                </div>
-                <div class="col-md-3">
-                  <div class="col-form-label invalid-feedback mt-0">Введите Ваш телефон</div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-3 col-form-label fs-14">Город</label>
-                <div class="col-md-6">
-                  <select class="select-two" style="width: 100%" data-placeholder="Введите город">
-                    <option></option>
-                    <option>м. Луцьк (Волинська обл.)</option>
-                    <option>м. Лубни (Полтавська обл.)</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 offset-md-3">
-                  <button class="btn btn-primary" type="submit">Далее</button>
+                <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                    <button class="btn btn-primary" type="submit">Далее</button>
+                  </div>
                 </div>
               </div>
             </fieldset>
+            <!-- add .active to show second step -->
             <fieldset class="service__step service__step--second">
-              <legend class="h2">Особенности изделия</legend>
+              <legend class="service__step-title h2">Особенности изделия</legend>
+              <div class="service__step-content">
+                <div class="form-group row align-items-center">
+                  <label class="col-md-3 col-form-label fs-14">Пломба производителя</label>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="seal-no" name="Repair[seal]" class="custom-control-input">
+                          <label class="custom-control-label" for="seal-no">Нарушена</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="seal-yes" name="Repair[seal]" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="seal-yes">Не нарушена</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center">
+                  <label class="col-md-3 col-form-label fs-14">Оригинальная упаковка</label>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="packaging-yes" name="Repair[packaging]" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="packaging-yes">Есть</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="packaging-no" name="Repair[packaging]" class="custom-control-input">
+                          <label class="custom-control-label" for="packaging-no">Нет</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center">
+                  <label class="col-md-3 col-form-label fs-14">Паспорт на изделие</label>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="passport-yes" name="Repair[passport]" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="passport-yes">Есть</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="passport-no" name="Repair[passport]" class="custom-control-input">
+                          <label class="custom-control-label" for="passport-no">Нет</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text-input" class="col-md-3 col-form-label fs-14">Описание поломки</label>
+                  <div class="col-md-6">
+                    <textarea class="form-control" name="Repair[description]" id="text-input" rows="3"></textarea>
+                    <label class="text-primary fs-12 font-weight-500 cursor-pointer mt-2">
+                      <input type="file" class="sr-only">
+                      <span>Прикрепить фото</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9 text-right">
+                    <button type="submit" class="btn btn-secondary btn-lg">Отправить заявку</button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>

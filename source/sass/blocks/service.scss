@@ -8,18 +8,34 @@
   }
 
   &__step {
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 1rem;
 
-    legend {
+    &-title {
       float: left;
+    }
+
+    &-content {
+      display: none;
     }
 
     &--second {
       border-top: 2px solid $border-color;
+      padding-bottom: 50px;
 
-      legend {
+      .service__step-title {
         color: $border-color;
+      }
+    }
+
+    &.active {
+      padding-bottom: 50px;
+
+      .service__step-title {
+        color: inherit;
+      }
+
+      .service__step-content {
+        display: block;
       }
     }
   }

@@ -63,10 +63,11 @@ $border-radius-lg: 20px;
 $input-btn-font-size: 0.875rem;
 $input-btn-padding-y: 0.5rem;
 $input-btn-padding-x: 0.75rem;
-$input-btn-padding-x-sm: 1rem;
 $input-btn-font-size-sm: 0.75rem;
-
-$form-feedback-font-size: $input-btn-font-size;
+$input-btn-padding-x-sm: 1rem;
+$input-btn-font-size-lg: $input-btn-font-size;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
 
 $input-bg: #f2f2f2;
 $input-color: $body-color;
@@ -76,9 +77,12 @@ $input-border-color: #d9d9d9;
 $input-border-radius: $border-radius;
 $input-border-radius-sm: $border-radius;
 
+$form-feedback-font-size: $input-btn-font-size;
+
 $btn-padding-x: 1.25rem;
 $btn-border-radius: $border-radius-lg;
 $btn-border-radius-sm: $border-radius-lg;
+$btn-border-radius-lg: 30px;
 
 $breadcrumb-font-size: 12px;
 $breadcrumb-padding-y: 1rem;
@@ -95,3 +99,6 @@ $dropdown-link-hover-color: $secondary;
 $dropdown-link-hover-bg: transparent;
 $dropdown-link-active-bg: transparent;
 $dropdown-link-active-color: $secondary;
+
+$custom-control-indicator-size: 1.5rem;
+$custom-control-indicator-border-color: $input-border-color;
