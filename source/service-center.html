@@ -32,15 +32,15 @@
           </ol>
         </nav>
         <h1>Сервисный центр Liberta</h1>
-        <ul class="row list-unstyled mt-60p mb-0">
-          <li class="col-3 d-flex align-items-center">
+        <ul class="row list-unstyled mt-xl-60p mt-40p mb-0">
+          <li class="col-sm-auto d-flex align-items-center">
             <img class="img-fluid mr-2" src="//liberta.ua/img/phone-icon.png" alt="">
             <div>
               <span class="d-block fs-14">Телефон:</span>
               <a class="text-dark fs-18 font-weight-500 text-decoration-none" href="tel:+380965051030">+38(096)505-10-30</a>
             </div>
           </li>
-          <li class="col-3 d-flex align-items-center">
+          <li class="col-sm-auto offset-lg-1 mt-20p mt-sm-0 d-flex align-items-center">
             <img class="img-fluid mr-2" src="//liberta.ua/img/mail-icon.png" alt="">
             <div>
               <span class="d-block fs-14">Эл. почта:</span>
@@ -50,14 +50,17 @@
         </ul>
       </div>
     </section>
-    <div class="container pt-20p">
+    <div class="container pt-md-20p pt-30p">
       <div class="row">
-        <div class="col-8">
+        <div class="col-xl-8">
           <form>
             <fieldset class="service__step service__step--first active">
-              <legend class="service__step-title h2">Ваши контактные данные</legend>
+              <div class="d-flex align-items-baseline flex-wrap flex-sm-nowrap mb-3">
+                <legend class="service__step-title h2 mb-0">Ваши контактные данные</legend>
+                <button type="button" class="btn-unstyled text-primary fs-14 ml-sm-3 mt-2 mt-sm-0">Редактировать</button>
+              </div>
               <div class="service__step-content">
-                <div class="form-group row">
+                <div class="form-group form-row">
                   <label for="order-number" class="col-md-3 col-form-label fs-14">Номер заказа <span class="text-muted">*</span></label>
                   <div class="col-md-6">
                     <input type="text" id="order-number" class="form-control" required>
@@ -67,7 +70,7 @@
                     <div class="col-form-label invalid-feedback mt-0">Неверный номер заказа</div>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group form-row">
                   <label for="name" class="col-md-3 col-form-label fs-14">Имя и фамилия <span class="text-muted">*</span></label>
                   <div class="col-md-6">
                     <input type="text" id="name" class="form-control" required>
@@ -76,7 +79,7 @@
                     <div class="col-form-label invalid-feedback mt-0">Введите имя и фамилию</div>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group form-row">
                   <label for="phone" class="col-md-3 col-form-label fs-14">Телефон <span class="text-muted">*</span></label>
                   <div class="col-md-6">
                     <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required>
@@ -85,7 +88,7 @@
                     <div class="col-form-label invalid-feedback mt-0">Введите Ваш телефон</div>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group form-row">
                   <label class="col-md-3 col-form-label fs-14">Город</label>
                   <div class="col-md-6">
                     <select class="select-two" style="width: 100%" data-placeholder="Введите город">
@@ -95,7 +98,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="row">
+                <div class="form-row">
                   <div class="col-md-6 offset-md-3">
                     <button class="btn btn-primary" type="submit">Далее</button>
                   </div>
@@ -106,7 +109,7 @@
             <fieldset class="service__step service__step--second">
               <legend class="service__step-title h2">Особенности изделия</legend>
               <div class="service__step-content">
-                <div class="form-group row align-items-center">
+                <div class="form-group form-row align-items-center">
                   <label class="col-md-3 col-form-label fs-14">Пломба производителя</label>
                   <div class="col-md-6">
                     <div class="row">
@@ -125,7 +128,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-group row align-items-center">
+                <div class="form-group form-row align-items-center">
                   <label class="col-md-3 col-form-label fs-14">Оригинальная упаковка</label>
                   <div class="col-md-6">
                     <div class="row">
@@ -144,7 +147,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-group row align-items-center">
+                <div class="form-group form-row align-items-center">
                   <label class="col-md-3 col-form-label fs-14">Паспорт на изделие</label>
                   <div class="col-md-6">
                     <div class="row">
@@ -163,7 +166,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group form-row">
                   <label for="text-input" class="col-md-3 col-form-label fs-14">Описание поломки</label>
                   <div class="col-md-6">
                     <textarea class="form-control" name="Repair[description]" id="text-input" rows="3"></textarea>
@@ -173,7 +176,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="row">
+                <div class="form-row">
                   <div class="col-md-9 text-right">
                     <button type="submit" class="btn btn-secondary btn-lg">Отправить заявку</button>
                   </div>

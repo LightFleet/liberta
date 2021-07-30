@@ -12,10 +12,12 @@
 
     &-title {
       float: left;
+      width: auto;
     }
 
     &-content {
       display: none;
+      clear: both;
     }
 
     &--second {
@@ -36,6 +38,29 @@
 
       .service__step-content {
         display: block;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .service {
+    &__intro {
+      min-height: 200px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .service {
+    &__intro {
+      min-height: auto;
+      background-image: none;
+    }
+
+    &__step {
+      &--first {
+        border-top: 2px solid $border-color;
       }
     }
   }
