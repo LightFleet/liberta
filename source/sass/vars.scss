@@ -62,6 +62,7 @@ $border-radius-lg: 20px;
 
 $input-btn-font-size: 0.875rem;
 $input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 0.75rem;
 $input-btn-padding-x-sm: 1rem;
 $input-btn-font-size-sm: 0.75rem;
 
@@ -69,6 +70,8 @@ $form-feedback-font-size: $input-btn-font-size;
 
 $input-bg: #f2f2f2;
 $input-color: $body-color;
+$input-font-weight: 500;
+$input-color: $dark;
 $input-border-color: #d9d9d9;
 $input-border-radius: $border-radius;
 $input-border-radius-sm: $border-radius;

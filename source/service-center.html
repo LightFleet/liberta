@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/KievitPro-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -86,7 +87,11 @@
               <div class="form-group row">
                 <label class="col-md-3 col-form-label fs-14">Город</label>
                 <div class="col-md-6">
-
+                  <select class="select-two" style="width: 100%" data-placeholder="Введите город">
+                    <option></option>
+                    <option>м. Луцьк (Волинська обл.)</option>
+                    <option>м. Лубни (Полтавська обл.)</option>
+                  </select>
                 </div>
               </div>
               <div class="row">
@@ -107,6 +112,12 @@
   <include src="source/include/footer.html"></include>
 
   <script src="js/scripts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.select-two').select2();
+    });
+  </script>
 </body>
 
 </html>
