@@ -86,4 +86,36 @@ $(function () {
     $(this).toggleClass('active');
   });
 
+  if ($(".shops-slider").length) {
+    $('.shops-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover: true,
+      swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        }
+      ]
+    });
+  }
+
 });
