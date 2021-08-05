@@ -52,3 +52,14 @@ strong {
     color: $primary;
   }
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: 15px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}

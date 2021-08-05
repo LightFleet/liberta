@@ -19,6 +19,7 @@ $dark: #1d1d1d;
 $text-muted: #808080;
 
 $theme-colors: (
+  'gray': $text-muted,
   'pink': $pink,
 );
 
@@ -112,3 +113,9 @@ $pagination-border-width: 0;
 $pagination-active-bg: $primary;
 $pagination-hover-color: $secondary;
 $pagination-hover-bg: transparent;
+
+$popover-font-size: 0.75rem;
+$popover-border-width: 0;
+$popover-border-radius: $border-radius;
+$popover-header-padding-y: 1rem;
+$popover-header-padding-x: 1rem;

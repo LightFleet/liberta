@@ -1,0 +1,162 @@
+.smart-category {
+  &__section-animated {
+    padding-top: 95px;
+    min-height: 585px;
+
+    h2 {
+      font-size: 72px;
+      line-height: 1;
+    }
+
+    p {
+      opacity: 0;
+      position: relative;
+      line-height: 1.8;
+
+      &.txtFadeIn {
+        opacity: 1;
+        animation: fadein 1s;
+      }
+    }
+
+    .reveal {
+      width: 0;
+      position: relative;
+      color: transparent;
+      overflow: hidden;
+      transition: 0.5s ease;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0;
+        background-color: $body-color;
+        transition: 0.5s ease;
+      }
+    }
+
+    .printing {
+      .reveal {
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    .printed {
+      .reveal {
+        color: inherit;
+
+        &::before {
+          right: 0;
+        }
+      }
+    }
+
+    .section-parallax__bg {
+      height: 884px;
+    }
+
+    &.text-white {
+      .reveal {
+        &::before {
+          background-color: #fff;
+        }
+      }
+
+      .section-parallax__bg {
+        background-color: $dark;
+      }
+    }
+
+    &.high-tech {
+      .section-parallax__bg {
+        background-image: url('//liberta.ua/img/smart-bg-0.jpg');
+      }
+    }
+
+    &.combination {
+      .section-parallax__bg {
+        height: 792px;
+        background-image: url('//liberta.ua/img/smart-bg-1.jpg');
+      }
+    }
+
+    &.health {
+      .section-parallax__bg {
+        background-image: url('//liberta.ua/img/smart-bg-2.jpg');
+      }
+    }
+
+    &.resist {
+      .section-parallax__bg {
+        background-image: url('//liberta.ua/img/smart-bg-4.jpg');
+      }
+    }
+
+    &.media {
+      .section-parallax__bg {
+        background-image: url('//liberta.ua/img/smart-bg-5.jpg');
+      }
+    }
+
+    &.google-play {
+      a {
+        border-radius: 30px;
+        padding-left: 35px;
+        background-color: #121212;
+        max-width: 230px;
+        transition: $transition-base;
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+
+      .section-parallax__bg {
+        background-image: url('//liberta.ua/img/smart-bg-6.jpg');
+      }
+    }
+  }
+
+  .weight-skin {
+    section {
+      padding-top: 75px;
+      min-height: 400px;
+      background-repeat: no-repeat;
+
+      &.skin {
+        background-position: top left;
+        background-image: url('//liberta.ua/img/smart-bg-3_2.jpg');
+      }
+
+      &.weight {
+        background-position: top right;
+        background-image: url('//liberta.ua/img/smart-bg-3_1.jpg');
+      }
+    }
+
+    h3 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .btn-outline-gray {
+      font-size: 1.5rem;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      padding: 0;
+      position: relative;
+      top: -2px;
+    }
+  }
+}
