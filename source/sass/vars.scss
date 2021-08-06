@@ -16,10 +16,12 @@ $info: #c3a573;
 $pink: #fdecf0;
 $light: #f8f8f8;
 $dark: #1d1d1d;
+$black: #121212;
 $text-muted: #808080;
 
 $theme-colors: (
   'gray': $text-muted,
+  'black': $black,
   'pink': $pink,
 );
 
@@ -27,6 +29,7 @@ $yiq-contrasted-threshold: 170;
 
 $spacer: 1rem;
 $spacers: (
+  10p: 10px,
   20p: 20px,
   30p: 30px,
   40p: 40px,

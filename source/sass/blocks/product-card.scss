@@ -1,0 +1,36 @@
+.product-card {
+  position: relative;
+  background-color: #181818;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  height: 100%;
+  transition: $transition-base;
+
+  &:hover {
+    background-color: $dark;
+    box-shadow: 0 0 0 20px $dark;
+    z-index: 1;
+  }
+
+  &__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 290px;
+    height: 290px;
+    object-fit: scale-down;
+  }
+
+  &__name {
+    display: block;
+    font-weight: 500;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
