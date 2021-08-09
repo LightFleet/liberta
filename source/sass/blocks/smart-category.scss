@@ -125,16 +125,18 @@
     section {
       padding-top: 75px;
       min-height: 400px;
+      height: 100%;
       background-repeat: no-repeat;
-
-      &.skin {
-        background-position: top left;
-        background-image: url('//liberta.ua/img/smart-bg-3_2.jpg');
-      }
 
       &.weight {
         background-position: top right;
         background-image: url('//liberta.ua/img/smart-bg-3_1.jpg');
+      }
+
+      &.skin {
+        background-position: top left;
+        background-image: url('//liberta.ua/img/smart-bg-3_2.jpg');
+        padding-left: 30px;
       }
     }
 
@@ -157,6 +159,158 @@
       padding: 0;
       position: relative;
       top: -2px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .smart-category {
+    &__products {
+      &-title {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .smart-category {
+    &__section-animated {
+      padding-top: 40px;
+      min-height: 400px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      &.high-tech {
+        background-image: url('//liberta.ua/img/smart-bg-tablet-0.jpg');
+      }
+
+      &.combination {
+        background-image: url('//liberta.ua/img/smart-bg-tablet-1.jpg');
+      }
+
+      &.health {
+        background-image: url('//liberta.ua/img/smart-bg-tablet-2.jpg');
+      }
+
+      &.resist {
+        background-image: url('//liberta.ua/img/smart-bg-tablet-4.jpg');
+      }
+
+      &.media {
+        background-image: url('//liberta.ua/img/smart-bg-tablet-5.jpg');
+      }
+
+      &.google-play {
+        background-image: url('//liberta.ua/img/smart-bg-tablet-6.jpg');
+      }
+    }
+
+    .weight-skin {
+      section {
+        padding-top: 30px;
+        min-height: 200px;
+
+        &.weight {
+          background-image: url('//liberta.ua/img/smart-bg-tablet-3_1.jpg');
+        }
+
+        &.skin {
+          background-image: url('//liberta.ua/img/smart-bg-tablet-3_2.jpg');
+        }
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .btn-outline-gray {
+        width: 24px;
+        height: 24px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .smart-category {
+    &__section-animated {
+      min-height: auto;
+      background-size: auto;
+      padding-bottom: 220px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .reveal {
+        color: inherit;
+      }
+
+      p {
+        opacity: 1;
+      }
+
+      &.high-tech {
+        background-image: url('//liberta.ua/img/smart-bg-mobile-0.jpg');
+      }
+
+      &.combination {
+        background-image: url('//liberta.ua/img/smart-bg-mobile-1.jpg');
+      }
+
+      &.health {
+        background-image: url('//liberta.ua/img/smart-bg-mobile-2.jpg');
+        padding-bottom: 160px;
+      }
+
+      &.resist {
+        background-image: url('//liberta.ua/img/smart-bg-mobile-4.jpg');
+      }
+
+      &.media {
+        background-image: url('//liberta.ua/img/smart-bg-mobile-5.jpg');
+      }
+
+      &.google-play {
+        background-image: url('//liberta.ua/img/smart-bg-mobile-6.jpg');
+      }
+    }
+
+    .weight-skin {
+      section {
+        min-height: auto;
+        padding-top: 20px;
+
+        &.weight {
+          background-image: url('//liberta.ua/img/smart-bg-mobile-3_1.jpg');
+        }
+
+        &.skin {
+          background-image: url('//liberta.ua/img/smart-bg-mobile-3_2.jpg');
+          padding-left: 0;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .btn-outline-gray {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
   }
 }

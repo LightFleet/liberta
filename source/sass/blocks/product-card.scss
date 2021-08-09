@@ -5,6 +5,7 @@
   padding: 30px;
   text-align: center;
   height: 100%;
+  box-shadow: 0 0 0 0 #181818;
   transition: $transition-base;
 
   &:hover {
@@ -31,6 +32,17 @@
     &:hover {
       text-decoration: none;
       color: inherit;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .product-card {
+    padding: 30px 15px;
+
+    &__img {
+      width: 210px;
+      height: 210px;
     }
   }
 }
