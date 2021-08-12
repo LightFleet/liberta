@@ -12,8 +12,21 @@
   background-color: transparent;
 }
 
+.text-link {
+  color: $primary;
+  transition: $transition-base;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
 .font-weight-500 {
   font-weight: 500;
+}
+
+.lh-wide {
+  line-height: 1.8;
 }
 
 .cursor-pointer {

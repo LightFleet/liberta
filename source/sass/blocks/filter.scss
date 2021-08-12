@@ -1,0 +1,65 @@
+.filter {
+  padding: 12px 30px;
+  border: 1px solid $input-border-color;
+  color: $secondary;
+  font-weight: 500;
+
+  .dropdown-toggle {
+    color: inherit;
+  }
+
+  .dropdown-menu {
+    padding: 22px 30px 12px;
+    margin-left: -30px;
+    margin-top: 14px;
+    border-radius: 0;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 0;
+
+    .custom-control-label {
+      font-weight: 300;
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    max-width: 240px;
+    border-bottom: 1px solid transparent;
+    transition: $transition-base;
+
+    &:focus-within {
+      border-color: $secondary;
+    }
+
+    &-submit {
+      color: $secondary;
+
+      svg {
+        display: block;
+      }
+    }
+
+    &-field {
+      border: 0;
+      font-weight: inherit;
+      color: $secondary;
+      flex-grow: 1;
+
+      &::placeholder {
+        color: $secondary;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

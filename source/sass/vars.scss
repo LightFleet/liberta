@@ -63,6 +63,9 @@ $container-max-widths: (
   xl: 1280px,
 );
 
+$link-hover-color: $secondary;
+$link-hover-decoration: none;
+
 $border-color: #f0f0f0;
 $border-radius: 5px;
 $border-radius-lg: 20px;
@@ -106,6 +109,7 @@ $dropdown-link-hover-color: $secondary;
 $dropdown-link-hover-bg: transparent;
 $dropdown-link-active-bg: transparent;
 $dropdown-link-active-color: $secondary;
+$dropdown-item-padding-x: 0.75rem;
 
 $custom-control-indicator-size: 1.5rem;
 $custom-control-indicator-border-color: $input-border-color;

@@ -257,4 +257,23 @@ $(function () {
     }
   });
 
+  var seoTxtH = $(".seo-txt").height();
+  $(".seo-txt").height(235);
+  if (seoTxtH > 235) {
+    $(".seo-txt__expand").removeClass("d-none");
+    $(".seo-txt__collapse").addClass("d-none");
+  }
+  $(".seo-txt__expand").on("click", function () {
+    $(".seo-txt").animate({ height: seoTxtH }, 300);
+    $(".seo-txt__expand").addClass("d-none");
+    $(".seo-txt__collapse").removeClass("d-none");
+    $(".seo-txt").removeClass("collapsed");
+  });
+  $(".seo-txt__collapse").on("click", function () {
+    $(".seo-txt").animate({ height: 235 }, 300);
+    $(".seo-txt__expand").removeClass("d-none");
+    $(".seo-txt__collapse").addClass("d-none");
+    $(".seo-txt").addClass("collapsed");
+  });
+
 });
