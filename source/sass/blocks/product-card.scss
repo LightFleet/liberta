@@ -1,17 +1,21 @@
 .product-card {
   position: relative;
-  background-color: #181818;
-  color: #fff;
-  padding: 30px;
-  text-align: center;
   height: 100%;
-  box-shadow: 0 0 0 0 #181818;
+  text-align: center;
+  background-color: $light;
   transition: $transition-base;
 
+  &:not(.dark) {
+    box-shadow: 0 0 0 0 $light;
+  }
+
   &:hover {
-    background-color: $dark;
-    box-shadow: 0 0 0 20px $dark;
-    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  }
+
+  &__info {
+    padding: 15px;
   }
 
   &__img {
@@ -19,8 +23,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    width: 290px;
-    height: 290px;
+    width: 270px;
+    height: 240px;
     object-fit: scale-down;
   }
 
@@ -34,12 +38,135 @@
       color: inherit;
     }
   }
+
+  &__full {
+    display: none;
+  }
+
+  &.dark {
+    background-color: #181818;
+    color: #fff;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .product-card {
+    &__full {
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      top: -20px;
+      bottom: -20px;
+      text-align: left;
+      padding: 15px;
+      opacity: 0;
+      transition: $transition-base;
+      display: block;
+    }
+
+    &__options {
+      width: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__option {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 15px;
+      padding-right: 10px;
+      color: $text-muted;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      &-icon {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+        background-image: url('//liberta.ua/img/svg/options.svg');
+      }
+
+      &.light_outside &-icon {
+        background-position: 0 -23px;
+      }
+
+      &.light_outside:hover &-icon {
+        background-position: 52% -23px;
+      }
+
+      &.linse &-icon {
+        background-position: 0 -50px;
+      }
+
+      &.linse:hover &-icon {
+        background-position: 52% -50px;
+      }
+
+      &-title {
+        display: none;
+        white-space: nowrap;
+        padding-left: 5px;
+      }
+
+      &:hover {
+        width: auto;
+      }
+
+      &:hover &-title {
+        display: block;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 20px #fff, 0 0 70px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    &:hover &__full {
+      opacity: 1;
+    }
+
+    &.dark {
+      box-shadow: 0 0 0 0 #181818;
+
+      &:hover {
+        box-shadow: 0 0 0 20px $dark;
+      }
+    }
+
+    &.dark &__option {
+      &.light_outside .product-card__option-icon {
+        background-position: 99.5% -23px;
+      }
+
+      &.light_outside:hover .product-card__option-icon {
+        background-position: 52% -23px;
+      }
+
+      &.linse .product-card__option-icon {
+        background-position: 99.5% -50px;
+      }
+
+      &.linse:hover .product-card__option-icon {
+        background-position: 52% -50px;
+      }
+
+      &:hover {
+        background-color: $dark;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-down(lg) {
   .product-card {
-    padding: 30px 15px;
-
     &__img {
       width: 210px;
       height: 210px;
