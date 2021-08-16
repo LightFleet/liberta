@@ -31,10 +31,10 @@
           </ol>
         </nav>
         <div class="row align-items-center">
-          <div class="col-xl-8 mb-3">
+          <div class="col-xl-8 col-md-7 mb-3">
             <h1 class="mb-0">Зеркала LIBERTA</h1>
           </div>
-          <div class="col-xl-4 mb-3">
+          <div class="col-xl-4 col-md-5 mb-3">
             <a href="kak-vybrat-zerkalo" class="suggest-post d-flex align-items-center font-weight-500">
               <img class="img-fluid mr-3" src="//liberta.ua/img/svg/owl.svg" width="60" alt="Как выбрать зеркало">
               <span>Как выбрать зеркало</span>
@@ -45,108 +45,112 @@
 
       <div class="filter mt-4">
         <div class="container">
-          <form class="filter__inner d-none d-md-block">
+          <form class="filter__inner">
             <div class="row align-items-center">
-              <div class="col-auto">
-                <div class="dropdown">
-                  <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Тип сортировки</button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-1">
-                        <label class="custom-control-label" for="filter-input-1">Прямоугольные</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-2">
-                        <label class="custom-control-label" for="filter-input-2">Круглые</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-3">
-                        <label class="custom-control-label" for="filter-input-3">Овальные</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-4">
-                        <label class="custom-control-label" for="filter-input-4">Закругленные</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-5">
-                        <label class="custom-control-label" for="filter-input-5">Квадратные</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                    </li>
-                  </ul>
+              <div class="filter__params col-auto mr-auto">
+                <div class="row align-items-center d-none d-md-flex">
+                  <div class="col-auto">
+                    <div class="dropdown">
+                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Форма</button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-1">
+                            <label class="custom-control-label" for="filter-input-1">Прямоугольные</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-2">
+                            <label class="custom-control-label" for="filter-input-2">Круглые</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-3">
+                            <label class="custom-control-label" for="filter-input-3">Овальные</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-4">
+                            <label class="custom-control-label" for="filter-input-4">Закругленные</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-5">
+                            <label class="custom-control-label" for="filter-input-5">Квадратные</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="dropdown">
+                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обрамление</button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[2][]" id="filter-input-6">
+                            <label class="custom-control-label" for="filter-input-6">Металлическая рама</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[2][]" id="filter-input-7">
+                            <label class="custom-control-label" for="filter-input-7">Без рамы</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="dropdown">
+                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Опции</button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[3][]" id="filter-input-8">
+                            <label class="custom-control-label" for="filter-input-8">С подсветкой</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="dropdown">
+                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Установка</button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="filter_form[4][]" id="filter-input-9">
+                            <label class="custom-control-label" for="filter-input-9">Настенные</label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <a href="/mirrors-new" title="Новинки" class="text-secondary">НОВИНКИ</a>
+                  </div>
                 </div>
               </div>
-              <div class="col-auto">
-                <div class="dropdown">
-                  <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обрамление</button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[2][]" id="filter-input-6">
-                        <label class="custom-control-label" for="filter-input-6">Металлическая рама</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[2][]" id="filter-input-7">
-                        <label class="custom-control-label" for="filter-input-7">Без рамы</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="dropdown">
-                  <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Опции</button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[3][]" id="filter-input-8">
-                        <label class="custom-control-label" for="filter-input-8">С подсветкой</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="dropdown">
-                  <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Установка</button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" name="filter_form[4][]" id="filter-input-9">
-                        <label class="custom-control-label" for="filter-input-9">Настенные</label>
-                      </div>
-                    </li>
-                    <li class="dropdown-item">
-                      <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-auto">
-                <a href="/mirrors-new" title="Новинки" class="text-secondary">НОВИНКИ</a>
-              </div>
-              <div class="col-4 pl-60p ml-auto">
+              <div class="col-lg-4 col-auto pl-xl-60p">
                 <div class="filter__search">
-                  <button type="submit" class="filter__search-submit btn-unstyled mr-1">
+                  <button type="submit" class="filter__search-submit btn-unstyled">
                     <svg width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">
                       <use xlink:href="img/sprite.svg#search"></use>
                     </svg>
@@ -176,7 +180,7 @@
         </div>
 
         <div class="row row-16 mb-n3 mt-30p">
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 col-xl-3 mb-3">
             <div class="product-card">
               <div class="product-card__info">
                 <img class="product-card__label" src="//liberta.ua/img/svg/in-stock.svg" alt="" height="28">
@@ -217,8 +221,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="product-card media">
+          <div class="col-md-4 col-xl-3 mb-3">
+            <div class="product-card product-card--media">
               <div class="product-card__info">
                 <div class="product-card__img-wrap">
                   <div class="product-card__media-left">
@@ -265,7 +269,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 col-xl-3 mb-3">
             <div class="product-card product-card--dark">
               <div class="product-card__info">
                 <div class="product-card__img-wrap">
@@ -297,7 +301,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 col-xl-3 mb-3">
             <div class="product-card product-card--dark">
               <div class="product-card__info">
                 <div class="product-card__img-wrap">
@@ -308,7 +312,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 col-xl-3 mb-3">
             <div class="product-card">
               <div class="product-card__info">
                 <div class="product-card__img-wrap">
@@ -319,7 +323,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 col-xl-3 mb-3">
             <button type="button" class="btn-unstyled product-more">
               <div class="product-more__icon">
                 <svg width="140" height="140" fill="currentColor" aria-hidden="true" focusable="false">

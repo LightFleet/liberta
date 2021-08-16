@@ -5,10 +5,13 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
+  padding: 15px;
   font-weight: 500;
+  overflow: hidden;
 
   &__icon {
-    padding: 60px;
+    height: 240px;
+    line-height: 240px;
     color: $primary;
     transition: transform 0.3s ease-out, color 0.3s ease;
   }

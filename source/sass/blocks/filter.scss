@@ -37,7 +37,6 @@
 
   &__search {
     display: flex;
-    align-items: center;
     max-width: 240px;
     border-bottom: 1px solid transparent;
     transition: $transition-base;
@@ -48,9 +47,13 @@
 
     &-submit {
       color: $secondary;
+      width: 26px;
+      flex-shrink: 0;
 
       svg {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -73,5 +76,38 @@
 
   &--top &__inner {
     border-color: transparent;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .filter {
+    top: 46px;
+
+    &__search {
+      margin-left: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .filter {
+    &__search {
+      position: absolute;
+      right: 0;
+      top: -13px;
+      width: 26px;
+      overflow: hidden;
+      transition: width 0.3s ease;
+
+      &.active-search {
+        width: auto;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .filter {
+    position: static;
   }
 }

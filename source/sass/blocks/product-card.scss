@@ -1,5 +1,6 @@
 .product-card {
   position: relative;
+  overflow: hidden;
   height: 100%;
   text-align: center;
   background-color: $light;
@@ -32,6 +33,7 @@
       height: 240px;
       margin-left: auto;
       margin-right: auto;
+      z-index: 0;
     }
   }
 
@@ -39,7 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     height: 48px;
     font-weight: 500;
     color: inherit;
@@ -54,7 +55,7 @@
     display: none;
   }
 
-  &.media &__img-wrap {
+  &--media &__img-wrap {
     position: relative;
 
     &::after {
@@ -70,7 +71,7 @@
     }
   }
 
-  &.media {
+  &--media {
     .circle {
       position: absolute;
       top: 0;
@@ -99,19 +100,19 @@
     }
   }
 
-  &.media &__media-left,
-  &.media &__media-right {
+  &--media &__media-left,
+  &--media &__media-right {
     position: absolute;
     z-index: -1;
     top: calc(50% - 25px);
     left: 50%;
   }
 
-  &.media &__media-left {
+  &--media &__media-left {
     margin-left: -100px;
   }
 
-  &.media &__media-right {
+  &--media &__media-right {
     margin-left: 30px;
   }
 
@@ -125,6 +126,7 @@
 
 @include media-breakpoint-up(xl) {
   .product-card {
+    overflow: visible;
     z-index: 1;
 
     &__full {
@@ -298,15 +300,6 @@
           background-position: 52% -158px;
         }
       }
-    }
-  }
-}
-
-@include media-breakpoint-down(lg) {
-  .product-card {
-    &__img {
-      width: 210px;
-      height: 210px;
     }
   }
 }

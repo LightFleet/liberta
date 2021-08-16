@@ -274,6 +274,17 @@ $(function () {
     });
   }
 
+  if ($(window).width() < 1200) {
+    $(".filter__search-field").focus(function () {
+      $(".filter__search").addClass("active-search")
+      $(".filter__params").css("opacity", 0)
+    });
+    $(".filter__search-field").focusout(function () {
+      $(".filter__search").removeClass("active-search")
+      $(".filter__params").css("opacity", 1)
+    });
+  }
+
   var seoTxtH = $(".seo-txt").height();
   $(".seo-txt").height(235);
   if (seoTxtH > 235) {
