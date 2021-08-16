@@ -3,15 +3,19 @@
   height: 100%;
   text-align: center;
   background-color: $light;
+  box-shadow: 0 0 0 0 $light;
   transition: $transition-base;
-
-  &:not(.dark) {
-    box-shadow: 0 0 0 0 $light;
-  }
 
   &:hover {
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  }
+
+  &__label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 28px;
   }
 
   &__info {
@@ -19,17 +23,24 @@
   }
 
   &__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    width: 270px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     object-fit: scale-down;
+
+    &-wrap {
+      max-width: 270px;
+      height: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__name {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 48px;
     font-weight: 500;
     color: inherit;
 
@@ -43,18 +54,79 @@
     display: none;
   }
 
-  &.dark {
-    background-color: #181818;
-    color: #fff;
+  &.media &__img-wrap {
+    position: relative;
 
+    &::after {
+      content: '';
+      width: 55px;
+      height: 38px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-repeat: no-repeat;
+      background-image: url('//liberta.ua/img/eq1.gif');
+    }
+  }
+
+  &.media {
+    .circle {
+      position: absolute;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background: #b3d6e4;
+      margin: 10px;
+      transition: 5s ease;
+    }
+
+    .delay1 {
+      animation: waves 3.5s linear 0.1s infinite;
+    }
+
+    .delay2 {
+      animation: waves 3.5s linear 0.7s forwards infinite;
+    }
+
+    .delay3 {
+      animation: waves 3.5s linear 1.3s forwards infinite;
+    }
+
+    .delay4 {
+      animation: waves 3.5s linear 1.9s forwards infinite;
+    }
+  }
+
+  &.media &__media-left,
+  &.media &__media-right {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 25px);
+    left: 50%;
+  }
+
+  &.media &__media-left {
+    margin-left: -100px;
+  }
+
+  &.media &__media-right {
+    margin-left: 30px;
+  }
+
+  &--dark {
     &:hover {
-      background-color: $dark;
+      background-color: $dark !important;
+      color: #fff;
     }
   }
 }
 
 @include media-breakpoint-up(xl) {
   .product-card {
+    z-index: 1;
+
     &__full {
       position: absolute;
       left: -20px;
@@ -93,6 +165,14 @@
         background-image: url('//liberta.ua/img/svg/options.svg');
       }
 
+      &.light_inside &-icon {
+        background-position: 0 4px;
+      }
+
+      &.light_inside:hover &-icon {
+        background-position: 52% 4px;
+      }
+
       &.light_outside &-icon {
         background-position: 0 -23px;
       }
@@ -107,6 +187,33 @@
 
       &.linse:hover &-icon {
         background-position: 52% -50px;
+      }
+
+      &.facet &-icon {
+        background-position: 0 -77px;
+      }
+
+      &.facet:hover &-icon {
+        background-position: 52% -77px;
+      }
+
+      &.clock &-icon {
+        background-position: 0px -105px;
+      }
+
+      &.clock:hover &-icon {
+        background-position: 52% -105px;
+      }
+
+      &.polka &-icon {
+        background-position: 0px -158px;
+        height: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      &.polka:hover &-icon {
+        background-position: 52% -158px;
       }
 
       &-title {
@@ -126,40 +233,70 @@
 
     &:hover {
       box-shadow: 0 0 0 20px #fff, 0 0 70px rgba(0, 0, 0, 0.3);
-      z-index: 1;
+      z-index: 2;
     }
 
     &:hover &__full {
       opacity: 1;
     }
 
-    &.dark {
-      box-shadow: 0 0 0 0 #181818;
-
+    &--dark {
       &:hover {
         box-shadow: 0 0 0 20px $dark;
       }
-    }
 
-    &.dark &__option {
-      &.light_outside .product-card__option-icon {
-        background-position: 99.5% -23px;
-      }
+      .product-card__option {
+        &:hover {
+          background-color: $dark;
+        }
 
-      &.light_outside:hover .product-card__option-icon {
-        background-position: 52% -23px;
-      }
+        &.light_inside .product-card__option-icon {
+          background-position: 99.5% 4px;
+        }
 
-      &.linse .product-card__option-icon {
-        background-position: 99.5% -50px;
-      }
+        &.light_inside:hover .product-card__option-icon {
+          background-position: 52% 4px;
+        }
 
-      &.linse:hover .product-card__option-icon {
-        background-position: 52% -50px;
-      }
+        &.light_outside .product-card__option-icon {
+          background-position: 99.5% -23px;
+        }
 
-      &:hover {
-        background-color: $dark;
+        &.light_outside:hover .product-card__option-icon {
+          background-position: 52% -23px;
+        }
+
+        &.linse .product-card__option-icon {
+          background-position: 99.5% -50px;
+        }
+
+        &.linse:hover .product-card__option-icon {
+          background-position: 52% -50px;
+        }
+
+        &.facet .product-card__option-icon {
+          background-position: 99.5% -77px;
+        }
+
+        &.facet:hover .product-card__option-icon {
+          background-position: 52% -77px;
+        }
+
+        &.clock .product-card__option-icon {
+          background-position: 99.5% -105px;
+        }
+
+        &.clock:hover .product-card__option-icon {
+          background-position: 52% -105px;
+        }
+
+        &.polka .product-card__option-icon {
+          background-position: 99.5% -158px;
+        }
+
+        &.polka:hover .product-card__option-icon {
+          background-position: 52% -158px;
+        }
       }
     }
   }

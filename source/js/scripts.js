@@ -257,6 +257,23 @@ $(function () {
     }
   });
 
+  function getWindowWidth() {
+    var windowWidth = $(window).width();
+    return windowWidth;
+  }
+
+  // STICKY FILTER
+  if ($(".filter").length) {
+    $(window).scroll(function () {
+      var filterTopOffsetDynamic = document.querySelector(".filter").getBoundingClientRect().top;
+      if (filterTopOffsetDynamic <= 90 && getWindowWidth() >= 768) {
+        $('.filter').addClass('filter--top');
+      } else {
+        $('.filter').removeClass('filter--top');
+      }
+    });
+  }
+
   var seoTxtH = $(".seo-txt").height();
   $(".seo-txt").height(235);
   if (seoTxtH > 235) {
