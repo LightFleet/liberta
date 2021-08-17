@@ -24,6 +24,14 @@ $(function () {
 
   });
 
+  $('.main-nav__list-item.has-children').each(function () {
+    $(this).hover(function () {
+      $('.header').prepend("<div class='page-overlay'></div>");
+    }, function () {
+      $('.header').find('.page-overlay').remove();
+    });
+  });
+
   $(window).on('scroll', function () {
     if ($(this).scrollTop() >= 150) {
       $('.header').addClass('in-top');
