@@ -43,109 +43,16 @@
         </div>
       </div>
 
-      <div class="filter mt-4">
+      <div class="filter mt-xl-3 mt-2">
         <div class="container">
           <form class="filter__inner">
             <div class="row align-items-center">
               <div class="filter__params col-auto mr-auto">
                 <div class="row align-items-center d-none d-md-flex">
-                  <div class="col-auto">
-                    <div class="dropdown">
-                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Форма</button>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-1">
-                            <label class="custom-control-label" for="filter-input-1">Прямоугольные</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-2">
-                            <label class="custom-control-label" for="filter-input-2">Круглые</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-3">
-                            <label class="custom-control-label" for="filter-input-3">Овальные</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-4">
-                            <label class="custom-control-label" for="filter-input-4">Закругленные</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[1][]" id="filter-input-5">
-                            <label class="custom-control-label" for="filter-input-5">Квадратные</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div class="dropdown">
-                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обрамление</button>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[2][]" id="filter-input-6">
-                            <label class="custom-control-label" for="filter-input-6">Металлическая рама</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[2][]" id="filter-input-7">
-                            <label class="custom-control-label" for="filter-input-7">Без рамы</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div class="dropdown">
-                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Опции</button>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[3][]" id="filter-input-8">
-                            <label class="custom-control-label" for="filter-input-8">С подсветкой</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <div class="dropdown">
-                      <button class="btn-unstyled dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Установка</button>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="filter_form[4][]" id="filter-input-9">
-                            <label class="custom-control-label" for="filter-input-9">Настенные</label>
-                          </div>
-                        </li>
-                        <li class="dropdown-item">
-                          <button type="button" class="btn btn-secondary mt-2">Показать товары</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <a href="/mirrors-new" title="Новинки" class="text-secondary">НОВИНКИ</a>
-                  </div>
+                  <include src="source/include/filter-desktop.html"></include>
+                </div>
+                <div class="dropdown position-static d-md-none">
+                  <include src="source/include/filter-mobile.html"></include>
                 </div>
               </div>
               <div class="col-lg-4 col-auto pl-xl-60p">
