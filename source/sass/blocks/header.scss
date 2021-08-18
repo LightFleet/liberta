@@ -3,14 +3,14 @@
   z-index: 20;
 
   &__top {
-    &-wrapper {
-      min-height: 46px;
-    }
-
     font-size: 14px;
     padding: 14px 0;
     top: -46px;
     transition: top 0.3s;
+
+    &-wrapper {
+      min-height: 46px;
+    }
 
     a,
     .dropdown-toggle,

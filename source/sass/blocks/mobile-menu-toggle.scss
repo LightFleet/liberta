@@ -15,7 +15,8 @@
     width: 24px;
     left: 0;
     background-color: currentColor;
-    transition: $transition-base;
+    transition: transform $transition-base, top $transition-base,
+      bottom $transition-base;
   }
 
   &::before,
@@ -29,5 +30,21 @@
 
   &::after {
     bottom: 6px;
+  }
+
+  &--opened &__icon {
+    opacity: 0;
+  }
+
+  &--opened {
+    &::before {
+      top: calc(50% - 1px);
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: calc(50% - 1px);
+      transform: rotate(-45deg);
+    }
   }
 }
