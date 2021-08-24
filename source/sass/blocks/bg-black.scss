@@ -7,6 +7,22 @@
     }
   }
 
+  .custom-control-label {
+    &::before {
+      border-top-color: #363636;
+      background-color: $dark;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $black;
+    color: #fff;
+  }
+
+  .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
   .product-card--dark {
     background-color: #181818;
     color: #fff;
@@ -16,5 +32,27 @@
   .product-more {
     background-color: #181818;
     color: #fff;
+  }
+
+  .page-item {
+    &:not(.active) {
+      .page-link {
+        color: #fff;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .bg-black {
+    .filter {
+      .dropdown-menu {
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+      }
+    }
   }
 }
